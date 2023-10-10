@@ -1,6 +1,6 @@
 
-local STUFF1 = game:HttpGet("the url with the hwid in it")
-local STUFF2 = game:HttpGet("the url with the key in it")
+local STUFF1 = game:HttpGet("https://raw.githubusercontent.com/LeakedWare/DevilWare/main/hwid.lua")
+local STUFF2 = game:HttpGet("https://raw.githubusercontent.com/LeakedWare/DevilWare/main/key.lua")
 
 local old 
 old = hookfunction(game.HttpGet,function(self,url,...)
