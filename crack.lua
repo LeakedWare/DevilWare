@@ -3,7 +3,7 @@ local STUFF1 = game:HttpGet("https://raw.githubusercontent.com/LeakedWare/DevilW
 local STUFF2 = game:HttpGet("https://raw.githubusercontent.com/LeakedWare/DevilWare/main/key.lua")
 
 local old 
-old = hookfunction(game.HttpGet,function(self,url,...)
+old = hookfunction(game.HttpGet, newcclosure(function(self,url,...)
     if type(url) == "string" and string.match(url,"hwid")then 
             print("Returned Own Script")
             return STUFF1
@@ -12,7 +12,7 @@ old = hookfunction(game.HttpGet,function(self,url,...)
         return STUFF2
         end
     return old(self,url,...)
-end)
+end))
 
 print("success executed crack.lua")
 
