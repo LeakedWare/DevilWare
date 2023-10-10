@@ -16,4 +16,4 @@ end)
 
 print("success executed crack.lua")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LeakedWare/DevilWare/main/main.lua"))()
+local DevilWare = loadstring(game:HttpGet("https://raw.githubusercontent.com/LeakedWare/DevilWare/main/main.lua", true))()
