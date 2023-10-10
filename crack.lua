@@ -14,6 +14,4 @@ old = hookfunction(game.HttpGet, newcclosure(function(self,url,...)
     return old(self,url,...)
 end))
 
-print("success executed crack.lua")
-
 local DevilWare = loadstring(game:HttpGet("https://raw.githubusercontent.com/LeakedWare/DevilWare/main/main.lua", true))()
